@@ -1,0 +1,10 @@
+services:
+  devlopment:
+    build:
+      context: './'
+      args:
+        UID: '1002'  # 実行ユーザーのUIDにする
+    command: 'bash'
+    volumes:
+      - './:/workspace/:rw'
+    working_dir: '/workspace'
