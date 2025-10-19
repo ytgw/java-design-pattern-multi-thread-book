@@ -3,7 +3,8 @@
     "vscode": {
       "extensions": [
         "donjayamanne.githistory",
-        "shardulm94.trailing-spaces"
+        "shardulm94.trailing-spaces",
+        "vscjava.vscode-java-pack"
       ]
     }
   },
