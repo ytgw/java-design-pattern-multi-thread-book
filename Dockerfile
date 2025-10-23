@@ -3,6 +3,8 @@ FROM eclipse-temurin:latest
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     git sudo bash-completion \
+    # 7章の練習問題で作成するGUIアプリに必要
+    libxi6 libxrender1 libxtst6 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
